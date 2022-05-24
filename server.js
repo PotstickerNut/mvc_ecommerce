@@ -45,12 +45,11 @@ app.get("/product/:id", (req, res) => {
   const result = products.filter(
     (product) => product.id === Number(req.params.id)
   );
-  console.log(result);
 
   if (result.length === 0) {
     res.status(404).render("404");
   } else {
-    res.send(result);
+    res.render("product-result", { product: result[0] });
   }
 });
 
