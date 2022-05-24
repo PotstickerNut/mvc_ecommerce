@@ -49,6 +49,7 @@ app.get("/product/:id", (req, res) => {
   if (result.length === 0) {
     res.status(404).render("404");
   } else {
+    // "product" name from this item is used in template
     res.render("product-result", { product: result[0] });
   }
 });
