@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+  <body>
+    <h1>Products Page</h1>
+    <% data.map((product, index) => { %>
+    <div>
+      <hr />
+      <%= product.title %> <br />
+      <%= product.price %> <br />
+      <%= product.description %> <br />
+      <img src="<%= product.thumbnail %>"
+    </div>
+    <% }) %>
+  </body>
+</html>
