@@ -41,7 +41,7 @@ app.post("/products", (req, res) => {
   res.redirect("/products");
 });
 
-app.get("/products/:id", (req, res) => {
+app.get("/product/:id", (req, res) => {
   const result = products.filter(
     (product) => product.id === Number(req.params.id)
   );
