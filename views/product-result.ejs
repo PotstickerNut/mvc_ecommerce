@@ -8,8 +8,12 @@
   </head>
   <body>
     <h1><%= product.title %></h1>
+    <img src="<%= product.thumbnail %>" alt="<%= product.title %>" />
     <p><%= product.price %></p>
     <p><%= product.description %></p>
-    <img src="<%= product.thumbnail %>" alt="<%= product.title %>" />
+    <p><%= product.discountPercentage %></p>
+    <p><%= product.rating %></p>
+    <p><%= product.brand %></p>
+    <p><%= product.category %></p>
   </body>
 </html>
